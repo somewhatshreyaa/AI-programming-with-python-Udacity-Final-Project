@@ -1,6 +1,5 @@
 # AI-programming-with-python-Udacity-Final-Project
 
-# Image Classifier with AI Programming (Udacity Nanodegree)
 
 ## Overview
 
