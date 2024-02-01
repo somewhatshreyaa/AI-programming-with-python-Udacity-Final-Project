@@ -51,10 +51,10 @@ import json
 
 ## Usage
 
-# Train the model
+## Train the model
 python train.py "flowers" --save_dir "train_checkpoint.pth" --arch "vgg16" --learning_rate 0.002 --hidden_units 512  --epochs 2 --gpu
 
-# Make predictions
+## Make predictions
 python predict.py flowers/test/58/image_02663.jpg train_checkpoint.pth --top_k 3 --category_names cat_to_name.json --gpu
 
 ## Project Structure
