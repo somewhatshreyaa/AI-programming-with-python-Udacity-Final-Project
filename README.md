@@ -10,35 +10,42 @@ This repository contains an image classifier project created as part of the AI P
 
 - [Introduction](#introduction)
 - [Requirements](#requirements)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [License](#license)
 
 ## Introduction
 
-Briefly describe your image classifier project. Include information about the dataset used, the neural network architecture, and the goal of the project. Mention any specific features or functionalities that make your project unique.
+Project code for Udacity's AI Programming with Python Nanodegree program. In this project, students first develop code for an image classifier built with PyTorch, then convert it into a command line application.
+
+The project is broken down into multiple steps:
+
+Load and preprocess the image dataset
+Train the image classifier on your dataset
+Use the trained classifier to predict image content
+We'll lead you through each part which you'll implement in Python.
+
+When you've completed this project, you'll have an application that can be trained on any set of labeled images. Here your network will be learning about flowers and end up as a command line application. But, what you do with your new skills depends on your imagination and effort in building a dataset. For example, imagine an app where you take a picture of a car, it tells you what the make and model is, then looks up information about it. Go build your own dataset and make something new.
 
 ## Requirements
 
-Specify the software and library dependencies required to run your project. For example:
+The packages you will need are as follows:
 
-- Python 3.x
-- TensorFlow
-- NumPy
-- Matplotlib
-- ...
+import torch
+import torch.utils.data as data
 
-## Installation
+import torchvision
+import torchvision.transforms as transforms
+import torchvision.datasets as datasets
 
-Provide step-by-step instructions on how to install and set up your project. Include any specific configurations or settings that need to be addressed.
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/your-project.git
+from PIL import Image
 
-# Navigate to the project directory
-cd your-project
+import train
+import predict
+import json
 
-# Install dependencies
-pip install -r requirements.txt
+
