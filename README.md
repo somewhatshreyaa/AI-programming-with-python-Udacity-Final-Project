@@ -13,6 +13,7 @@ This repository contains an image classifier project created as part of the AI P
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [License](#license)
+  
 
 ## Introduction
 
@@ -47,5 +48,33 @@ from PIL import Image
 import train
 import predict
 import json
+
+
+## Usage
+
+# Train the model
+python train.py "flowers" --save_dir "train_checkpoint.pth" --arch "vgg16" --learning_rate 0.002 --hidden_units 512  --epochs 2 --gpu
+
+# Make predictions
+python predict.py flowers/test/58/image_02663.jpg train_checkpoint.pth --top_k 3 --category_names cat_to_name.json --gpu
+
+## Project Structure
+
+- Load the data
+- Label mapping
+- Visualize a few image
+- Building and training the classifier
+- Testing the network
+- Save the checkpoint
+- Loading the checkpoint
+- Inference for classification
+- Image processing
+- Class prediction
+- Sanity checking
+
+
+## License
+
+
 
 
