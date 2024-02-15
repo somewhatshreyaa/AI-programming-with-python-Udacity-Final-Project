@@ -75,8 +75,3 @@ python predict.py flowers/test/58/image_02663.jpg train_checkpoint.pth --top_k 3
 ## License
 
 
-
-
-
-
-
