@@ -3,6 +3,7 @@
 
 ## Overview
 
+
 This repository contains an image classifier project created as part of the AI Programming with Python Nanodegree by Udacity. The project involves building and training a deep learning model to classify images into different categories.
 
 ## Table of Contents
